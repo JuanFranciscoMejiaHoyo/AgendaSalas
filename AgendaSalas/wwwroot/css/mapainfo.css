@@ -1,0 +1,190 @@
+﻿.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+/*Kenko Sleep*/
+.button1 {
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    left: 12%;
+    top: 13.4%;
+}
+/*Kenko Air*/
+.button2 {
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    left: 29.5%;
+    top: 6%
+}
+/*Kenko Ligt*/
+.button3 {
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    left: 45%;
+    top: 19%
+}
+.buttonzc {
+    position: absolute;
+    padding: 45px 170px;
+    border-radius: 100px;
+    left: 25.3%;
+    top: 40%
+}
+/*Posicion Zona Comun*/
+.buttonzc1, .buttonzc2, .buttonzc3, .buttonzc4 {
+    position: absolute;
+    padding: 15px 20px;
+    border-radius: 50%;
+    top: 40%;
+}
+.buttonzc6, .buttonzc7, .buttonzc8 {
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    top: 50%;
+}
+.buttonzc1 {
+    left:27%;
+}
+.buttonzc2, .buttonzc6 {
+    left:35.2%
+}
+.buttonzc3, .buttonzc7 {
+    left:43.1%
+}
+.buttonzc4, .buttonzc8 {
+    left:51.1%
+}
+
+/*Color y velocidad de los botones*/
+.button1, .button2, .button3, .buttonzc1, .buttonzc2, .buttonzc3, .buttonzc4, .buttonzc6, .buttonzc7, .buttonzc8, .buttonzc {
+    background-color: #C6D8D3;
+    animation: pulse 1.5s infinite;
+}
+
+.button1::before, .button2::before, .button3::before, .buttonzc1::before, .buttonzc2::before,
+.buttonzc3::before, .buttonzc4::before, .buttonzc6::before, .buttonzc7::before, .buttonzc8::before, buttonzc::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        animation: circleAnimation 1s infinite;
+    }
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+
+
+    50% {
+        transform: scale(1.5);
+        opacity:0.7;
+    }
+
+
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+@keyframes circleAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.9;
+    }
+}
+
+
+
+
+
+
+a {
+    cursor: pointer;
+}
+.table1 {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: start;
+}
+.table2 {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: start;
+}
+h1{
+    margin:3%;
+}
+td {
+    padding: 10px;
+}
+.formulario {
+    border-left: 1px solid black;
+}
+
+.seccion-modal {
+    margin: 2%;
+}
+.modal-title {
+    margin-left: auto;
+}
+p{
+    margin:2%;
+}
+
+.imgcarr {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+label {
+    margin-right: 10px;
+}
+input, select{
+    width:auto;
+    border-radius:7px;
+    text-align:center;
+    border:1px solid lightgrey;
+}
+
+form{
+    text-align:center;
+    
+}
+.agenda {
+    background-image: url('../iconos/agenda.png');
+    background-repeat:no-repeat;
+    background-position-y:center;
+    background-position-x:85px;
+    background-size:25px;
+    background-color:white;
+    border-color:lightgray;
+    text-align:left;
+    padding-left:15px;
+    width:120px;
+    height:35px;
+    border-radius:10px;
+}
